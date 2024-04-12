@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.mobiles4.Data.DataSources.Room.Entities.Item2;
 import com.example.mobiles4.Data.Models.Item;
 
 import com.example.mobiles4.R;
@@ -22,8 +23,8 @@ public class RecyclerViewAdapter  extends
 
     private static final String TAG = "MyApp";
     private final LayoutInflater inflater;
-    private final List<Item> items;
-    RecyclerViewAdapter(Context context, List<Item> items) {
+    private final List<Item2> items;
+    RecyclerViewAdapter(Context context, List<Item2> items) {
         this.items = items;
         this.inflater = LayoutInflater.from(context);
     }
@@ -40,9 +41,9 @@ public class RecyclerViewAdapter  extends
     public void
     onBindViewHolder(RecyclerViewAdapter.ViewHolder
                              holder, int position) {
-        Item item = items.get(position);
-        holder.textView.setText(item.getItemName());
-        holder.imageView.setImageResource(item.getItemImageResId());
+        Item2 item2 = items.get(position);
+        holder.textView.setText(item2.getText());
+        holder.imageView.setImageResource(item2.getImageResource());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

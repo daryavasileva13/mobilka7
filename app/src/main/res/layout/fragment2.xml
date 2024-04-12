@@ -18,14 +18,7 @@
         android:text="Наши секции:"
         android:textSize="34sp"/>
 
-    <TextView
-        android:id="@+id/text_gymnastics"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
-        android:text="Художественная гимнастика"
-        />
+
 
     <TextView
         android:id="@+id/text_swimming"
@@ -106,6 +99,14 @@
         android:backgroundTint="@color/button_color" />
     <!--        android:onClick="onButtonClick2"-->
 
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Сохранить данные"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/button_color" />
 
     <Button
         android:id="@+id/button_end2"
@@ -122,7 +123,7 @@
         android:id="@+id/image_cup"
         android:layout_width="150dp"
         android:layout_height="144dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:src="@drawable/cup_icon_icons_com_52156"
         android:layout_gravity="center"/>
 

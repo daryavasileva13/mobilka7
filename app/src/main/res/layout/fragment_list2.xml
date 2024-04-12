@@ -12,7 +12,31 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="750dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сохранить список"
+            android:backgroundTint="@color/button_color"/>
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Прочитать"
+            android:backgroundTint="@color/button_color"/>
+
+    </LinearLayout>
+
+
 </LinearLayout>
 
 
